@@ -31,6 +31,7 @@ L432.00,readv2
 G742.00,readv2
 K138000,readv2
 G740.00,readv2
+ZV12900,readv2
 G82zz00,readv2
 G82z011,readv2
 G74yz00,readv2
@@ -164,10 +165,7 @@ G801z00,readv2
 G657.00,readv2
 G653.00,readv2
 J420z00,readv2
-ZV12800,readv2
 J420.00,readv2
-ZV12900,readv2
-ZV12811,readv2
 G300.00,readv2
 G302.00,readv2
 G64z111,readv2
@@ -250,6 +248,8 @@ G742A00,readv2
 G825.00,readv2
 G652.00,readv2
 G651.00,readv2
+ZV12800,readv2
+ZV12811,readv2
 14AD.00,readv2
 G5yy700,readv2
 F051300,readv2
