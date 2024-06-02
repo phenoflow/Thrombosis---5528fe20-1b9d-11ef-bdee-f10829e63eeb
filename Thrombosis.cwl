@@ -594,8 +594,8 @@ steps:
       potentialCases:
         id: potentialCases
         source: thrombosis-p16-subclavian---primary/output
-  ventricular-thrombosis-p16---primary:
-    run: ventricular-thrombosis-p16---primary.cwl
+  personal-thrombosis-p16---primary:
+    run: personal-thrombosis-p16---primary.cwl
     out:
     - output
     in:
@@ -605,6 +605,17 @@ steps:
       potentialCases:
         id: potentialCases
         source: thrombosis-p16-artery---primary/output
+  ventricular-thrombosis-p16---primary:
+    run: ventricular-thrombosis-p16---primary.cwl
+    out:
+    - output
+    in:
+      inputModule:
+        id: inputModule
+        source: inputModule56
+      potentialCases:
+        id: potentialCases
+        source: personal-thrombosis-p16---primary/output
   thrombosis-p16-transverse---primary:
     run: thrombosis-p16-transverse---primary.cwl
     out:
@@ -612,7 +623,7 @@ steps:
     in:
       inputModule:
         id: inputModule
-        source: inputModule56
+        source: inputModule57
       potentialCases:
         id: potentialCases
         source: ventricular-thrombosis-p16---primary/output
@@ -623,7 +634,7 @@ steps:
     in:
       inputModule:
         id: inputModule
-        source: inputModule57
+        source: inputModule58
       potentialCases:
         id: potentialCases
         source: thrombosis-p16-transverse---primary/output
@@ -634,7 +645,7 @@ steps:
     in:
       inputModule:
         id: inputModule
-        source: inputModule58
+        source: inputModule59
       potentialCases:
         id: potentialCases
         source: thrombosis-p16-colitis---primary/output
@@ -645,7 +656,7 @@ steps:
     in:
       inputModule:
         id: inputModule
-        source: inputModule59
+        source: inputModule60
       potentialCases:
         id: potentialCases
         source: longitudinal-thrombosis-p16---primary/output
@@ -656,7 +667,7 @@ steps:
     in:
       inputModule:
         id: inputModule
-        source: inputModule60
+        source: inputModule61
       potentialCases:
         id: potentialCases
         source: hepatic-thrombosis-p16---primary/output
@@ -667,7 +678,7 @@ steps:
     in:
       inputModule:
         id: inputModule
-        source: inputModule61
+        source: inputModule62
       potentialCases:
         id: potentialCases
         source: jugular-thrombosis-p16---primary/output
@@ -678,7 +689,7 @@ steps:
     in:
       inputModule:
         id: inputModule
-        source: inputModule62
+        source: inputModule63
       potentialCases:
         id: potentialCases
         source: transient-thrombosis-p16---primary/output
@@ -689,7 +700,7 @@ steps:
     in:
       inputModule:
         id: inputModule
-        source: inputModule63
+        source: inputModule64
       potentialCases:
         id: potentialCases
         source: thrombosis-p16-wallenberg---primary/output
@@ -700,7 +711,7 @@ steps:
     in:
       inputModule:
         id: inputModule
-        source: inputModule64
+        source: inputModule65
       potentialCases:
         id: potentialCases
         source: thrombosis-p16-brainstem---primary/output
@@ -711,7 +722,7 @@ steps:
     in:
       inputModule:
         id: inputModule
-        source: inputModule65
+        source: inputModule66
       potentialCases:
         id: potentialCases
         source: internal-thrombosis-p16---primary/output
@@ -722,7 +733,7 @@ steps:
     in:
       inputModule:
         id: inputModule
-        source: inputModule66
+        source: inputModule67
       potentialCases:
         id: potentialCases
         source: thrombosis-p16-lacunar---primary/output
@@ -733,7 +744,7 @@ steps:
     in:
       inputModule:
         id: inputModule
-        source: inputModule67
+        source: inputModule68
       potentialCases:
         id: potentialCases
         source: thrombosis-p16-myocard---primary/output
@@ -744,7 +755,7 @@ steps:
     in:
       inputModule:
         id: inputModule
-        source: inputModule68
+        source: inputModule69
       potentialCases:
         id: potentialCases
         source: thrombosis-p16-rupture---primary/output
@@ -755,7 +766,7 @@ steps:
     in:
       inputModule:
         id: inputModule
-        source: inputModule69
+        source: inputModule70
       potentialCases:
         id: potentialCases
         source: thrombosis-p16-delivered---primary/output
@@ -766,7 +777,7 @@ steps:
     in:
       inputModule:
         id: inputModule
-        source: inputModule70
+        source: inputModule71
       potentialCases:
         id: potentialCases
         source: thrombosis-p16-complication---primary/output
@@ -777,7 +788,7 @@ steps:
     in:
       inputModule:
         id: inputModule
-        source: inputModule71
+        source: inputModule72
       potentialCases:
         id: potentialCases
         source: renal-thrombosis-p16---primary/output
@@ -788,7 +799,7 @@ steps:
     in:
       inputModule:
         id: inputModule
-        source: inputModule72
+        source: inputModule73
       potentialCases:
         id: potentialCases
         source: right-thrombosis-p16---primary/output
@@ -799,7 +810,7 @@ steps:
     in:
       inputModule:
         id: inputModule
-        source: inputModule73
+        source: inputModule74
       potentialCases:
         id: potentialCases
         source: postthrombotic-thrombosis-p16---primary/output
@@ -810,7 +821,7 @@ steps:
     in:
       inputModule:
         id: inputModule
-        source: inputModule74
+        source: inputModule75
       potentialCases:
         id: potentialCases
         source: thrombosis-p16-inferior---primary/output
@@ -821,7 +832,7 @@ steps:
     in:
       inputModule:
         id: inputModule
-        source: inputModule75
+        source: inputModule76
       potentialCases:
         id: potentialCases
         source: intestinal-thrombosis-p16---primary/output
@@ -832,7 +843,7 @@ steps:
     in:
       inputModule:
         id: inputModule
-        source: inputModule76
+        source: inputModule77
       potentialCases:
         id: potentialCases
         source: thrombosis-p16-cva---primary/output
@@ -1144,6 +1155,10 @@ inputs:
     type: File
   inputModule76:
     id: inputModule76
+    doc: Python implementation unit
+    type: File
+  inputModule77:
+    id: inputModule77
     doc: Python implementation unit
     type: File
 outputs:
